@@ -31,10 +31,25 @@ public class TextCount : MonoBehaviour
 
         // 중단 불가능, 효율 좋음
         StartCoroutine(CountPlus());*/
+
+
+        StartCoroutine("CountPlus");
     }
 
     IEnumerator CountPlus()
     {
+        while(true)
+        {
+            iCount++;
+            tCountText.text = iCount.ToString("N0");
+            // C#의 ToString()을 통해 문자 형태로 변형이 가능
+            // N0는 숫자 3자리 간격으로 ,를 표시하는 format이다.
+            // 1000 -> 1,000
+
+            yield return null;
+            // 다음 동작으로 넘어간다.
+        }
+
         /*Debug.Log("아아 마이크 테스트");
         yield return new WaitForSeconds(1);
 
