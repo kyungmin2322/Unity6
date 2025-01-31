@@ -32,6 +32,11 @@ public class CreateObject3 : MonoBehaviour
 
             sample = Instantiate(prefab);
             sample.AddComponent<VectorSample>();
+            // gameObject.AddComponent<T>
+            // 오브젝트에 컴포넌트 기능을 추가하는 기능.
+            // GetComponent<T>
+            // 오브젝트가 가지고 있는 컴포넌트의 기능을 얻어오는 기능
+            // 스크립트에서 해당 컴포넌트의 기능을 가져와서 사용하고 싶을 경우 사용.
         }
     }
 }
