@@ -15,7 +15,7 @@ public class TypingText : MonoBehaviour
 
     public void OnMessageButonClick()
     {
-        StartCoroutine("TypingText");
+        StartCoroutine("Typing");
     }
 
     /// <summary>

@@ -46,7 +46,7 @@ public class TextCount : MonoBehaviour
             // N0는 숫자 3자리 간격으로 ,를 표시하는 format이다.
             // 1000 -> 1,000
 
-            yield return null;
+            yield return new WaitForSeconds(0.1f);
             // 다음 동작으로 넘어간다.
         }
 
